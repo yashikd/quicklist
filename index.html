@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Software Engineering Intern List</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <script src="../jobs.json"></script>
+        <link rel="stylesheet" href="../tabulator-master/dist/css/tabulator.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../tabulator-master/dist/js/tabulator.js"></script>
+        <script src="../get.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 id="heading">Software Engineering Job & Intern List</h1> 
+        </header>
+        <div class = "container">
+            <div class="form-group">
+                <div class = "row">
+                    <div class = "col col-lg-5">
+                        <input type="text" class="form-control" id="search" placeholder="Search"> 
+                    </div>
+                    <div class = "col col-lg-2">
+                        <button id="searchButton" type="button" class="btn btn-dark d-flex justify-content-start">Search</button>
+                    </div>
+                    <div class = "col col-lg-2"></div>
+                    <div class = "col col-lg-3">
+                            <select class="custom-select" id="selectBox">
+                            </select>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col">
+                    <div class="responsive-table">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class = "row">
+                <div class="fixed-rectangle">
+                    <div class="fixed-bottom">
+                        <h4 class="d-flex justify-content-center" id="footer">
+                            Less Working. More Chilling.&nbsp; <a href="https://quickapply.io"> quickapply.io</a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

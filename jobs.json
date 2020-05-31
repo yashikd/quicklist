@@ -1,0 +1,26 @@
+[
+    {
+        "company": "Google",
+        "title": "Software Engineering Intern 1",
+        "location": "Mountain View, CA",
+        "salary": "infinite"
+    },
+    {
+        "company": "Google",
+        "title": "Software Engineering Intern 2",
+        "location": "Mountain View, CA",
+        "salary": "infinite"
+    },
+    {
+        "company": "Google",
+        "title": "Software Engineering Intern 3",
+        "location": "Mountain View, CA",
+        "salary": "infinite"
+    },
+    {
+        "company": "Google",
+        "title": "Software Engineering Intern 4",
+        "location": "Mountain View, CA",
+        "salary": "infinite"
+    }
+]
