@@ -88,27 +88,23 @@ var tabledata = [];
 
 var table = null;
 
-
-
-//data();
-window.addEventListener("load", function() {
+window.addEventListener("load", function() {``
     loadData();
-
+    console.log($("#search").val());
+    //var text = $( "#search" ).val();
     $( "#searchButton" ).click(function() {
+        
         filterCompany();
     });
-
+        
     $('#search').keypress(function(event){
-        var keycode = (event.keyCode ? event.keyCode : event.which);
-        if(keycode == '13'){
-            filterCompany();
-        }
+        //var keycode = (event.keyCode ? event.keyCode : event.which);
+        filterCompany();
     });
 
     $( "#selectBox" ).change(function() {
         filterLocation();
     });
-    
 },false);
 
 
@@ -117,7 +113,7 @@ function filterLocation(){
     if(text != "ALL"){
         table.setFilter("location", "like", ", " + text);
     }else{
-        table.setFilter("location", "like", ", " + "");
+        table.clearFilter();
     }
 }
 
@@ -125,11 +121,9 @@ function filterCompany(){
     var text = $("#search").val();
     table.setFilter("company", "like", text);
 }
-
-
-
+$('You can scroll horizontally on the table').alert()
 function loadData(){
-    let requestURL = 'https://api.npoint.io/8676dd8e50672383ad81';
+    let requestURL = 'https://api.npoint.io/cfb837c1ee9ee01f357e';
     let request = new XMLHttpRequest();
     request.open('GET', requestURL);
     request.responseType = 'json';
@@ -139,12 +133,13 @@ function loadData(){
         table = new Tabulator(".responsive-table", {
             data: tabledata,          //load row data from array
             layout:"fitColumns",      //fit columns to width of table
-            responsiveLayout:"hide",  //hide columns that dont fit on the table
+            responsiveLayout: "hide",  //hide columns that dont fit on the table
+            autoResize: false,         //keeps it from auto resizing on mobile ==> horizontal scrolling
             tooltips:true,            //show tool tips on cells
             addRowPos:"top",          //when adding a new row, add it to the top of the table
             history:false,             //allow undo and redo actions on the table
             pagination:"local",       //paginate the dat
-            paginationSize: 20,//allow 7 rows per page of data
+            paginationSize: 20,       //allow 14 rows per page of data
             movableColumns:false,      //allow column order to be changed
             resizableRows:false,       //allow row order to be changed
             initialSort:[             //set the initial sort order of the data

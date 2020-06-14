@@ -4,10 +4,8 @@ body {
 
 #heading {
     text-align: center;
-    margin: 1.5em;
-
+    margin: 1em;
 }
-
 #table{
     text-align: left;
     margin-right: -1em;
@@ -22,6 +20,11 @@ body {
     padding-bottom: 2em;
 }
 
+.footer{
+    position: relative;
+    padding: 1.5em;
+}
+
 .container {
     text-align: center;
 }
@@ -31,11 +34,48 @@ body {
 }
 
 #footer {
-    padding-top: 1em;
+    /* padding-top: 4em; */
     color: gold;
     background-color: black;
     padding: 0.5em;
     margin-bottom: -0.1em;
-    padding-left: 1em;
-    padding-right: 1em;
+    /* padding-left: 1em;
+    padding-right: 1em; */
+}
+
+@media only screen and (max-width: 991px) {
+    #dropdown{
+        object-position: right;
+    }
+    
+    #selectBox {
+        
+        
+        /* max-width: 5em; */
+        min-width: 3.1em;
+        
+    }
+
+    #searchBar {
+        object-position: right;
+        padding-right: 0.5em;
+        min-width: 10em;
+    }
+
+    #button {
+        padding-left: 0.5em;
+        
+    }
+
+    .btn{
+        min-width: 0.5em;
+    }
+
+    .footer{
+        min-height: 5em;
+    }
+
+    #footer{
+        font-size: 17px;
+    }
 }

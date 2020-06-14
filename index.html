@@ -6,12 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/main.css">
+        <link href="./tabulator-master/dist/css/tabulator.css" rel="stylesheet">
         <script src="./jobs.json"></script>
-        <link rel="stylesheet" href="./tabulator-master/dist/css/tabulator.css">
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="./tabulator-master/dist/js/tabulator.js"></script>
+        <link href="./tabulator-master/dist/css/bootstrap/tabulator_bootstrap4.css" rel="stylesheet"> 
         <script src="./get.js"></script>
     </head>
     <body>
@@ -20,40 +21,39 @@
         </header>
         <div class = "container">
             <div class="form-group">
-                <div class = "row">
-                    <div class = "col col-lg-5">
-                        <input type="text" class="form-control" id="search" placeholder="Search"> 
-                    </div>
-                    <div class = "col col-lg-2">
-                        <button id="searchButton" type="button" class="btn btn-dark d-flex justify-content-start">Search</button>
-                    </div>
-                    <div class = "col col-lg-2"></div>
-                    <div class = "col col-lg-3">
+                <div class = "row one">
+                        <div class = "col col-lg-5" id="searchBar">
+                            <input type="text" class="form-control" id="search" placeholder="Companies"> 
+                        </div>
+                        <div class = "col col-lg-2" id = "button">
+                            <button id="searchButton" type="button" class="btn btn-dark d-flex justify-content-start">Search</button>
+                        </div>
+                        <div class = "col col-lg-5" id = "dropdown">
                             <select class="custom-select" id="selectBox">
+                                
                             </select>
-                    </div>
-                    
+                        </div>
                 </div>
             </div>
             <div class = "row">
                 <div class = "col">
-                    <div class="responsive-table">
+                    
+                    <div class="responsive-table thead-dark table-striped">
 
                     </div>
                 </div>
             </div>
         </div>
 
-            <div class = "row">
-                <div class="fixed-rectangle">
+            <!-- <div class = "row"> -->
+                <div class="fixed-rectangle footer">
                     <div class="fixed-bottom">
                         <h4 class="d-flex justify-content-center" id="footer">
                             Less Working. More Chilling.&nbsp; <a href="https://quickapply.io"> quickapply.io</a>
                         </h4>
                     </div>
                 </div>
-            </div>
-        </div>
+            <!-- </div> -->
         
     </body>
 </html>
