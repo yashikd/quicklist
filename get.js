@@ -139,7 +139,7 @@ function loadData(){
             addRowPos:"top",          //when adding a new row, add it to the top of the table
             history:false,             //allow undo and redo actions on the table
             pagination:"local",       //paginate the dat
-            paginationSize: 20,       //allow 14 rows per page of data
+            paginationSize: 13,       //allow 14 rows per page of data
             movableColumns:false,      //allow column order to be changed
             resizableRows:false,       //allow row order to be changed
             initialSort:[             //set the initial sort order of the data
